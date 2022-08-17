@@ -6,7 +6,7 @@
 <meta charset="UTF-8">
 <title>MemberAuth.jsp</title>
 </head>
-<body>
+<body> 
 <h2>MVC 패턴으로 회원인증하기</h2>
 <p>
 <strong>${authMessage }</strong>
