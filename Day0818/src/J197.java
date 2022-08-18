@@ -12,7 +12,7 @@ class Square {
 		this.x2 = x2;
 		this.y2 = y2;
 	} 
-
+ 
 	void print() {
 
 		System.out.println(x + " " + y + " " + x2 + " " + y2);
