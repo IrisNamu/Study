@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-class Square {
+class Square  {
 	int x;
 	int y;
 	int x2;
