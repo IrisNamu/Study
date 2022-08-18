@@ -15,6 +15,7 @@ class Square {
  
 	void print() {
 
+		
 		System.out.println(x + " " + y + " " + x2 + " " + y2);
 	}
 
