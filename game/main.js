@@ -19,7 +19,7 @@ let userY = 600;
 //이미지
 function loadImage() {
     townImage = new Image();
-    townImage.src = "imgs/main.png"
+    townImage.src = "imgs/town.png"
 
     userImage = new Image();
     userImage.src = "imgs/user.png"
