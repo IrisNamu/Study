@@ -1,0 +1,108 @@
+
+:root{  /*같은 변수를 적용시킨 root 값을 조작하여 관리.*/
+    --main-color:#ffffff;
+    --header-color:#f5e2e2;
+    --accent-color:#d77373;
+    --dark-main-color:#2B5566;
+    --text-bright-color: #fff;
+    --icon-color:#fff;
+    --icon-bk-color:#ddd;
+    --large-width: 1000px;
+}
+
+body {
+    background-color: var(--main-color);
+}
+
+#header {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    background-color: var(--header-color);
+}
+
+
+.nav_title ::before {
+    content: "SongYouJin";
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 3vw;
+  }
+
+.nav_title :hover:before {
+    content:"🎻🌞🪁";
+}
+
+.nav_title:hover {
+    animation-play-state: paused;
+  }
+
+body a:link {
+    color: rgb(130, 128, 128);
+    text-decoration: none;
+}
+
+/*사이트 방문했어도 보라색으로 안뜨게*/
+body a:visited {
+    color: rgb(171, 168, 168);
+    text-decoration: none;
+}
+
+.menu-item  ul a:hover {
+    /* background-color: var(--accent-color); */
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.2s linear;
+    border-bottom:3px solid rgb(195, 68, 18); 
+    padding-bottom:3px;
+}
+
+* {
+    font-family: "Montserrat", "Nanum Gothic", sans-serif;
+    scroll-behavior: smooth;  /*클릭했을때 샤라랑 부드럽게 넘겨주기*/
+}
+
+
+nav,
+.icons {
+    padding: 50px;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+ul{
+    display: flex;
+}
+
+/*헤더 로고*/
+.nav_title a{
+font-size: 2.5vw;
+font-weight: bold;
+text-align: left;
+}
+
+/*헤더 메뉴아이템들*/
+.menu-item li a{
+    text-align: right;
+    font-size: 1.5vw;
+
+}
+
+/*섹션 나눠주기*/
+section {
+    width: 80vw;
+    /* padding: 10vw; */
+    padding-top: 50vh;
+}
+
+
+/* ConB 국비 학원 프로젝트*/
