@@ -1,0 +1,222 @@
+@charset "UTF-8";
+
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+header,
+section,
+footer,
+nav,
+img,
+form,
+figcaption,
+figure,
+i,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+:root {
+    /*같은 변수를 적용시킨 root 값을 조작하여 관리.*/
+    --main-color: #ffffff;
+    --header-color: #f5e2e2;
+    --accent-color: #d77373;
+    --dark-main-color: #2B5566;
+    --text-bright-color: #fff;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
+    --large-width: 1000px;
+}
+
+body {
+    background-color: var(--main-color);
+    /* width: 100vw; */
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-between;
+    /* padding: 1rem; */
+    background-color: var(--header-color);
+}
+
+
+.nav_title ::before {
+    content: "SongYouJin";
+    color: var(--main-color);
+    font-weight: bold;
+    font-size: 3vw;
+}
+
+.nav_title :hover:before {
+    content: "🎻🌞🪁";
+}
+
+.nav_title:hover {
+    animation-play-state: paused;
+}
+
+body a:link {
+    color: rgb(130, 128, 128);
+    text-decoration: none;
+}
+
+/*사이트 방문했어도 보라색으로 안뜨게*/
+body a:visited {
+    color: rgb(171, 168, 168);
+    text-decoration: none;
+}
+
+.menu-item ul a:hover {
+    /* background-color: var(--accent-color); */
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: 0.2s linear;
+    border-bottom: 3px solid rgb(195, 68, 18);
+    /* padding-bottom: 3px; */
+}
+
+* {
+    font-family: "Montserrat", "Nanum Gothic", sans-serif;
+    scroll-behavior: smooth;
+    /*클릭했을때 샤라랑 부드럽게 넘겨주기*/
+}
+
+
+nav,
+.icons {
+    padding: 15px;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 0 30px;
+    font-weight: bold;
+}
+
+ul {
+    display: flex;
+}
+
+/*헤더 로고*/
+.nav_title a {
+    font-size: 2.5vw;
+    font-weight: bold;
+    text-align: left;
+}
+
+/*헤더 메뉴아이템들*/
+.menu-item li a {
+    text-align: right;
+    font-size: 1.5vw;
+
+}
+
+div#header{
+    height: 13.5vh;
+}
+
+/*섹션 나눠주기*/
+section {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.ConB {
+    padding-top: 13vh;
+    margin-left: 20vw;
+    margin-right: 20vw;
+
+
+}
+
+/* ConB 국비 학원 프로젝트*/
+.ConB_Title {
+    text-align: center;
+    font-size: 2vw;
+    margin-top: 3.5vh;
+}
+
+.hover_text {
+    opacity: 0.4;
+}
+
+.AcagemyProject li {
+    display: inline-block;
+    /* margin-right: 30px; */
+    line-height: 120%;
+    font-size: 20px;
+
+}
+
+/* 프로젝트 카드 쉐도우 */
+
+.card {
+
+    background: white;
+    width: 25vw;
+    height: 45vw;
+    margin: 8vh;
+    overflow: hidden;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+
+.card:hover {
+    box-shadow: 0 15px 30px 0 rgba(152, 93, 93, 0.2);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+img {
+    border-radius: 3px;
+    object-fit: cover;
+    width: auto;
+    height: auto;
+}
+
+.intro {
+    height: 200px;
+    width: 350px;
+    padding: 6px;
+    box-sizing: border-box;
+    bottom: 240px;
+    align-content: center;
+}
+
+/*
+
+
+
+*/
