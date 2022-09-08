@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스크롤 웹페이지</title>
+    <link rel="stylesheet" href="./full-page-js/fullpage.min.css" />
+    <script src="./full-page-js/fullpage.min.js"></script>
+    <style>
+        .section1 {
+            background-color: rgb(82, 129, 129);
+        }
+
+        .section4 {
+            background-color: black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="full-page">
+
+        <div class="section s0">
+            <h2>첫번 째 블록</h2>
+        </div>
+
+        <div class="section s1">
+            <h2>두번 째 블록</h2>
+        </div>
+
+        <div class="section s2">
+            <h2>세번 째 블록</h2>
+        </div>
+
+        <div class="section s3">
+            <h2>네번 째 블록</h2>
+        </div>
+
+        <div class="section s4">
+            <h2>다섯번 째 블록</h2>
+
+        </div>
+
+        <script>
+            new fullpage('#full-page');
+        </script>
+    </div>
+</body>
+
+</html>

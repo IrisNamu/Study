@@ -1,0 +1,233 @@
+@charset "UTF-8";
+
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+header,
+section,
+footer,
+nav,
+img,
+form,
+figcaption,
+figure,
+i,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+:root{ 
+    --main-color:#5D9AB2;
+    --accent-color:#BF6A7A;
+    --dark-main-color:#2B5566;
+    --text-bright-color: #fff;
+    --icon-color:#fff;
+    --icon-bk-color:#ddd;
+    --large-width: 1000px;
+}
+/*헤더영역*/
+
+.headerBox{
+display: block;
+}
+
+/*login 로그인 영역*/
+ol, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.login li{
+   float: left;
+   padding: 2rem;
+}
+
+.logo a{
+    padding-top: -15px;
+}
+
+.logoA logo{
+    display:inline-block;
+}
+
+.LogoImg{
+padding-top: 20px;
+padding-left: 20px;
+width: 40px;
+height: 40px;
+
+}
+.logoA{
+    vertical-align:middle;
+}
+
+.list .subA .subB .subC{
+position: relative;
+display: inline-block;
+text-decoration: none;
+}
+
+
+
+
+        /*푸터A : 사이트 정보*/
+        .footA{
+            margin-bottom: 30px;
+        }
+    
+            footer{
+                color: #fff;
+                color: var(--text-bright-color);
+                background-color: #2B5566;
+                background-color: var(--dark-main-color);
+              
+            }
+    
+            footer .container{
+                padding: 40px 20px;
+            }
+    
+            .footA h2{
+                margin-top: 0;
+                margin-bottom: 10;
+                font-size: 35px;
+                font-family: 'Montserrat', sans-serif;
+                letter-spacing: 0.2em;
+            }
+    
+            .footA p {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 14px;
+            }
+    
+            .footA a {
+                color: inherit; /*컬러를 부모요소의 색을 상속받겠다*/
+                text-decoration: none;
+            }
+    
+            /*푸터B : 푸터메뉴*/
+    
+            .footB div{ /*하나의 div끝나면 아래에 여백 30px 줌*/
+                margin-bottom: 30px;
+            }
+    
+            .footB h3{
+                margin-top: 0;
+                margin-bottom: 10px;
+                border-bottom: solid 1px currentColor;
+                font-size: 14px;
+            }
+    
+            .footB ul{
+                margin: 0; /*불필요한 여백 없애기*/
+                padding: 0;
+                list-style: none;
+            }
+            
+            .footB a{ /*li에 하면 안되고 a에 해야 먹힌다*/
+                color: #fff;
+                color: var(--text-bright-color);
+                font-size: 14px;
+                text-decoration: none;
+                display: block; /*블록박스를 구성해라- 옆으로 긴 박스가 나옴*/
+                padding: 5px;
+            }
+    
+            .footB a:hover{
+                background-color: rgba(0,0,0,0.3);
+            }
+    
+    
+            @media (min-width:768px) {
+                .footB {
+                    display: flex;
+                }
+    
+                .footB div{
+                    flex: 1; /*3갸의 푸터메뉴를 1:1:1 비율로 나눌 수 있게 display를 flex, <div>flex 1로 지정*/
+                }
+    
+                .footB div:not(:first-child) { /*★첫번째 자식 요소를 제외한 div가 선택*/
+                    margin-left: 40px;
+                }    
+                
+            }
+    
+            /*푸터C :저작권*/
+            .footC {
+                text-align: center;
+                font-size: 13px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+    
+            /*푸터 내부 요소 레이아웃 조정하기*/
+            
+            @media (min-width:768px) {
+                footer .container {
+                    display: flex;
+                    flex-wrap: wrap;/*flex-wrap: 나열된 요소들의 총 넓아거 부모넓이보다 크면 이 요소들을 다음줄에 이어서 나열*/
+                    max-width: 1000px;
+                    max-width: var(--large-width);
+                    margin-left: 0;
+                    margin-right: auto;
+                }
+    
+                .footA{
+                    flex: 0 0 40%;
+                }
+    
+                .footB{
+                    flex: 0 0 60%;
+                }
+                .footC{
+                    flex: 0 0 100%;
+                }
+            }
+    
+            /*푸터D SNS공유 아이콘*/
+            .footD {
+                margin-top: 20px;
+            }
+    
+            .footD ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+                display: flex;
+            }
+    
+            .footD a{
+                margin-right: 8px;
+                display: block;
+                padding: 5px;
+                color: inherit;
+                font-size: 12px;
+                text-decoration: none;
+                border: solid 1px currentColor;
+                width: 2em;
+                line-height: 2em;
+                border-radius: 50%;
+                text-align: center;
+            }
+    
+            .footD a:hover{
+                background-color: rgba(0,0,0,0.1)
+            }
+    
+      

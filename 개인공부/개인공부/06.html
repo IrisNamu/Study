@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc 함수</title>
+    <style>
+        .message {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 100px;
+            padding: 0.5em;
+            /*8px*/
+            border: 1px solid black;
+            font-size: 1.5em;
+        }
+
+        .message__text {
+            width: calc(100% - 100px); /*전송 버튼을 뺀 나머지를  여백없이 꽉차게 가변적으로 바꾸기*/
+            height: 100%;
+            border: none;
+            resize: none;
+        }
+
+        .message__text:focus {
+            outline: none;
+        }
+
+        .message__send {
+            width: 100px;
+            height: 100%;
+            border-radius: 8px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="message">
+        <textarea class="message__text"></textarea>
+        <button class="message__send">전송</button>
+
+    </div>
+</body>
+
+</html>
