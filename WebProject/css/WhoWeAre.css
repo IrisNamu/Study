@@ -75,64 +75,122 @@ body a:visited {
     position: fixed;
     z-index: 1;
     top: 0;
-    /* Position the navbar at the top of the page */
     width: 100%;
     /* Full width */
+    justify-content: space-between;
 }
 
 /* TitleA 로고와 제목 */
 
 .header {
     background-color: var(--dark-main-color);
-    /* position: fixed; */
+    align-items: center;
 }
 
-.TitleA {
-    text-align: left;
-}
 
 .TitleA .LogoImg {
-    margin: 10px;
-    height: 2vw;
-    width: 2vw;
+    margin: 8px;
+    height: 2rem;
+    width: 2rem;
     vertical-align: middle;
+
 
 }
 
 .TitleA span {
     font-weight: bolder;
-    font-size: 1.5vw;
+    font-size: 1.5rem;
     color: #2B5566;
     vertical-align: middle;
-    /* text-align: ; */
+
 }
 
 
-/*TitleB 메뉴들*/
+/*TitleB 메뉴*/
 
+/*menuA 콘텐츠 제목들*/
 .TitleB {
-    margin-left: 45vw;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+
 }
 
-.TitleB li {
-
+.TitleB .menuA li {
     float: left;
     padding: 10px;
-
 }
-
-.TitleB:hover {
-    animation-play-state: paused;
-}
-
 
 .TitleB ul a:hover {
-    /* background-color: var(--accent-color); */
     color: var(--header-color);
     text-decoration: none;
     transition: 0.2s linear;
-    border-bottom: 3px solid rgb(126, 209, 240);
-    /* padding-bottom: 3px; */
+}
+
+/*menuB 헴버거 토글. 클릭하면 메뉴 내려오는 기능*/
+.menuB .fa-solid{
+    font-size: 1.5rem;
+}
+
+/*menuC  토글 메뉴바 눌렀을때 나오는 메뉴들*/
+.menuC {
+    left: 0px;
+    position: fixed;
+    /* background-color:  var(--dark-body-color); */
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    background-color: rgba(11, 46, 60, 0.7);
+    visibility: hidden;
+    font-weight: bolder;
+}
+
+.menuC :hover {
+    background-color: #617e8f;
+    text-decoration: none;
+    transition: 0.4s linear;
+}
+
+.menuB:hover>.menuC {
+    visibility: visible;
+}
+
+
+
+@media screen and (min-width: 825px) {
+
+    .TitleB .menuB {
+        display: none;
+    }
+
+    .menuC {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 825px) {
+
+    .TitleB .menuA {
+        display: none;
+    }
+
+    .TitleA .LogoImg {
+        /* margin: 10px; */
+        height: 2rem;
+        width: 2rem;
+        vertical-align: middle;
+    }
+
+    .TitleA span {
+        font-weight: bolder;
+        font-size: 1rem;
+        color: #2B5566;
+        vertical-align: middle;
+        /* text-align: ; */
+    }
+
+
+
 }
 
 

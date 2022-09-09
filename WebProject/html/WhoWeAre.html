@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="/WebProject/css/WhoWeAre.css">
+    <link rel="stylesheet" type="text/css" href="/webProject/css/WhoWeAre.css">
     <script src="https://kit.fontawesome.com/e4982ae3c4.js" crossorigin="anonymous"></script>
     <link href="https://hangeul.pstatic.net/hangeul_static/css/nanum-barun-gothic.css" rel="stylesheet">
     <title>WhoWeAre?</title>
@@ -16,24 +16,38 @@
 
     <header>
         <nav class="header">
+
             <div class="TitleA">
-                <img class="LogoImg" src="/WebProject/img/LogoPolarBear.png">
+                <img class="LogoImg" src="/webProject/img/LogoPolarBear.png">
                 <span><a href="#"> ANABADA</a></span>
             </div>
 
             <div class="TitleB">
-                <ul>
+                <ul class="menuA">
                     <li><a href="#ConA">Who We Are</a></li>
                     <li><a href="#ConB">Why Use</a></li>
                     <li><a href="#ConC">What We Do</a></li>
                     <li><a href="#ConD">Who Made</a></li>
-                    <li><a href="#"></a></li>
                 </ul>
+
+                <ul class="menuB">
+                    <li><a href="#" class=" fa-solid fa-bars"></a></li>
+
+                    <ul class="menuC">
+                        <li><a href="#ConA">Who We Are</a></li>
+                        <li><a href="#ConB">Why Use</a></li>
+                        <li><a href="#ConC">What We Do</a></li>
+                        <li><a href="#ConD">Who Made</a></li>
+                    </ul>
+                </ul>
+
             </div>
+
         </nav>
+
     </header>
 
-    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+
 
     <section id="ConA" class="ConA">
         우리가 누구냐
@@ -46,5 +60,5 @@
         그래서 우린 무엇을 하냐
     </section>
     <section id="ConD" class="ConD">
-        개발자들이다.
+        회사사람들 소개다.
     </section>
