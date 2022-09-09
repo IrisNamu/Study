@@ -85,13 +85,14 @@ body a:visited {
 .header {
     background-color: var(--dark-main-color);
     align-items: center;
+    height: 6rem;
 }
 
 
 .TitleA .LogoImg {
     margin: 8px;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     vertical-align: middle;
 
 
@@ -99,7 +100,7 @@ body a:visited {
 
 .TitleA span {
     font-weight: bolder;
-    font-size: 1.5rem;
+    font-size: 2.1rem;
     color: #2B5566;
     vertical-align: middle;
 
@@ -119,6 +120,9 @@ body a:visited {
 .TitleB .menuA li {
     float: left;
     padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 2rem;
 }
 
 .TitleB ul a:hover {
@@ -129,12 +133,13 @@ body a:visited {
 
 /*menuB 헴버거 토글. 클릭하면 메뉴 내려오는 기능*/
 .menuB .fa-solid{
-    font-size: 1.5rem;
+    font-size: 2.5rem;
 }
 
 /*menuC  토글 메뉴바 눌렀을때 나오는 메뉴들*/
 .menuC {
     left: 0px;
+    top: 6em;
     position: fixed;
     /* background-color:  var(--dark-body-color); */
     width: 100%;
@@ -157,7 +162,7 @@ body a:visited {
 
 
 
-@media screen and (min-width: 825px) {
+@media screen and (min-width: 1000px) {
 
     .TitleB .menuB {
         display: none;
@@ -168,7 +173,7 @@ body a:visited {
     }
 }
 
-@media screen and (max-width: 825px) {
+@media screen and (max-width: 1000px) {
 
     .TitleB .menuA {
         display: none;
@@ -176,14 +181,14 @@ body a:visited {
 
     .TitleA .LogoImg {
         /* margin: 10px; */
-        height: 2rem;
-        width: 2rem;
+        height: 2.2rem;
+        width: 2.2rem;
         vertical-align: middle;
     }
 
     .TitleA span {
         font-weight: bolder;
-        font-size: 1rem;
+        font-size: 1.7rem;
         color: #2B5566;
         vertical-align: middle;
         /* text-align: ; */
