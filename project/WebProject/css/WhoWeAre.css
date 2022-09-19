@@ -1,0 +1,217 @@
+@charset "UTF-8";
+
+/* * {
+    font-family: 'NanumBarunGothic';
+} */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+
+body,
+div,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+header,
+section,
+footer,
+nav,
+img,
+form,
+figcaption,
+figure,
+i,
+p {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ol,
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    font-family: "Montserrat", "Nanum Gothic", sans-serif;
+    scroll-behavior: smooth;
+    /*클릭했을때 샤라랑 부드럽게 넘겨주기*/
+}
+
+
+:root {
+    --main-color: #c3d8dc;
+    --header-color: #9ed6ef;
+    --dark-main-color: #2B5566;
+    --dark-body-color: #4C6D81;
+    --hoverMenu-color: #979c9f;
+    --text-bright-color: #fff;
+    --icon-color: #fff;
+    --icon-bk-color: #ddd;
+    --large-width: 1000px;
+}
+
+body{
+    background-color: var(--dark-body-color);
+}
+
+body a:link {
+    color: var(--text-bright-color);
+    text-decoration: none;
+}
+
+/*사이트 방문했어도 보라색으로 안뜨게*/
+body a:visited {
+    color: var(--text-bright-color);
+    text-decoration: none;
+}
+
+.header {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    justify-content: space-between;
+}
+
+/* TitleA 로고와 제목 */
+
+.header {
+    background-color: var(--dark-main-color);
+    align-items: center;
+    height: 6rem;
+}
+
+
+.TitleA .LogoImg {
+    margin: 8px;
+    height: 3rem;
+    width: 3rem;
+    vertical-align: middle;
+
+
+}
+
+.TitleA span {
+    font-weight: bolder;
+    font-size: 2.1rem;
+    color: #2B5566;
+    vertical-align: middle;
+
+}
+
+
+/*TitleB 메뉴*/
+
+/*menuA 콘텐츠 제목들*/
+.TitleB {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+
+}
+
+.TitleB .menuA li {
+    float: left;
+    padding: 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+
+.TitleB ul a:hover {
+    color: var(--header-color);
+    text-decoration: none;
+    transition: 0.2s linear;
+}
+
+/*menuB 헴버거 토글. 클릭하면 메뉴 내려오는 기능*/
+.menuB .fa-solid{
+    font-size: 2.5rem;
+}
+
+/*menuC  토글 메뉴바 눌렀을때 나오는 메뉴들*/
+.menuC {
+    left: 0px;
+    top: 6em;
+    position: fixed;
+    /* background-color:  var(--dark-body-color); */
+    width: 100%;
+    text-align: center;
+    line-height: 3rem;
+    background-color: rgba(11, 46, 60, 0.7);
+    visibility: hidden;
+    font-weight: bolder;
+}
+
+.menuC :hover {
+    background-color: #617e8f;
+    text-decoration: none;
+    transition: 0.4s linear;
+}
+
+.menuB:hover>.menuC {
+    visibility: visible;
+}
+
+
+
+@media screen and (min-width: 1000px) {
+
+    .TitleB .menuB {
+        display: none;
+    }
+
+    .menuC {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .TitleB .menuA {
+        display: none;
+    }
+
+    .TitleA .LogoImg {
+        /* margin: 10px; */
+        height: 2.2rem;
+        width: 2.2rem;
+        vertical-align: middle;
+    }
+
+    .TitleA span {
+        font-weight: bolder;
+        font-size: 1.7rem;
+        color: #2B5566;
+        vertical-align: middle;
+        /* text-align: ; */
+    }
+}
+
+
+/*conA 우리 회사가 뭐하는 회사인지 소개*/
+.ConA {
+    padding-top: 6rem;
+    height: 10rem;
+}
+
+.ConA div{
+    position:absolute;
+    font-size: 8vw;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
