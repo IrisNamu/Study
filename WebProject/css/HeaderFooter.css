@@ -6,12 +6,9 @@
     font-family: 'NanumBarunGothic';
 }
 
-<<<<<<< HEAD
 /* body{ overflow: auto;
 } */
 
-=======
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 body,
 div,
 span,
@@ -48,11 +45,7 @@ a {
     --main-color: #c3d8dc;
     --header-color: #9ed6ef;
     --dark-main-color: #2B5566;
-<<<<<<< HEAD
     --hoverMenu-color: #979c9f;
-=======
-    --hoverMenu-color:#979c9f;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
     --text-bright-color: #fff;
     --icon-color: #fff;
     --icon-bk-color: #ddd;
@@ -82,16 +75,11 @@ a {
 }
 
 .HeaderA a {
-<<<<<<< HEAD
     font-size: 1rem;
-=======
-    font-size: 0.8rem;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
     padding: 10px;
     display: flex;
 }
 
-<<<<<<< HEAD
 
 
 /* 로그인 버튼 누르면 모달창 뜨기*/
@@ -131,12 +119,19 @@ a {
 .login-modal {
     background-color: #fefefe;
     margin: 5% auto;
-    padding: 20px;
+    padding: 2vw;
     border: 1px solid #888;
-    width: 40%;
-    height: 35vw;
+    width: 30%;
+    height: 32vw;
 }
 
+.modal-margin{
+    padding: 2vw 3vw 4vw 3vw;
+}
+
+.Login_form h3{
+letter-spacing: 35px;
+}
 /* The Close Button */
 .close {
     color: #aaa;
@@ -159,91 +154,11 @@ a {
     text-align: center;
     letter-spacing: 2px;
     font-size: 2.5vw;
-=======
-.HeaderA a:hover {
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-
-/*Login_btn 로그인 누르면 */
-.Login_btn{
-    border: 0;
-    outline: 0;
-    background-color: var(--main-color);
-    font-size: 0.9rem;
-    padding: 10px;
-cursor: pointer; /*커서 효과 낼 수 있음*/
-}
-
-
-.Login_btn:hover{
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
-/*Login 모달창*/
-.modal_wrap {
-    position: fixed;
-    width: 40vw;
-    height: 35vw;
-    border: 2px solid black;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: rgb(255, 255, 255);
-    z-index: 2; /*맨 위 위치할 수 있도록*/
-    display: none;
-}
-
-
-.modal_wrap.show-modal {
-
-    display: block;
-}
-
-.modal_background.show-modal {
-
-    display: block;
-}
-
-/* 모달창 누르면 백그라운드에 이미지 씌워서
-어두워지게 하고 클릭못하게! 바깥쪽 클릭하면 모달창 꺼짐*/
-.modal_background {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: none;
-}
-
-/* X표시 오른쪽으로 위치할 수 있도록*/
-.modal_close {
-    width: 1rem;
-    height: 2rem;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    cursor: pointer;
-}
-
-/*Login_form 로그인 입력폼*/
-
-.Login_form h3{
-padding-bottom: 13px;
-   text-align: center;
-   letter-spacing: 2px;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 
 }
 
 .Login_form {
-<<<<<<< HEAD
     padding: 2vw;
-=======
-    padding: 5vw;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 }
 
 .form-group input {
@@ -261,11 +176,7 @@ padding-bottom: 13px;
     background-color: transparent;
     border: none;
     border-bottom: 1.4px solid #d8d7d7;
-<<<<<<< HEAD
     font-size: 3vw;
-=======
-    font-size: 18px;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
     padding: 10px 0;
     display: block;
     width: 100%;
@@ -273,11 +184,7 @@ padding-bottom: 13px;
 
 .form-group label {
     color: #000000;
-<<<<<<< HEAD
     font-size: 1.5vw;
-=======
-    font-size: 16px;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
     font-weight: 100;
     position: absolute;
     pointer-events: none;
@@ -287,35 +194,18 @@ padding-bottom: 13px;
     left: 0px;
 }
 
-<<<<<<< HEAD
 
-=======
-/* .form-group input:valid,
-.form-group input:focus {
-    border-bottom-color: #dddddd;
-    outline: none;
-} */
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 
 .form-group input:valid+label,
 .form-group input:focus+label {
     color: rgb(24, 1, 1);
-<<<<<<< HEAD
     font-size: 0.8vw;
-=======
-    font-size: 14px;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
     transform: translateY(0);
 }
 
 .submit {
-<<<<<<< HEAD
     background: var(--dark-main-color);
     padding: 0.5vw;
-=======
-    background:var(--dark-main-color);
-    padding: 0.8vw;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
     outline: none;
     font-size: 1.5vw;
     width: 100%;
@@ -324,51 +214,30 @@ padding-bottom: 13px;
     color: rgb(255, 255, 255);
     border-radius: 15px;
     transition: 0.1s;
-<<<<<<< HEAD
     border: 0;
 }
 
 .submit:hover {
     background: var(--header-color);
-=======
-   border: 0;
-}
-
-.submit:hover {
-    background:var(--header-color);
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
     color: var(--hoverMenu-color);
 }
 
 
-<<<<<<< HEAD
 .GoSignUp p {
     padding-top: 1vw;
     text-align: center;
     font-size: 1.5vw;
-=======
-.GoSignUp p{
-    padding-top: 2vw;
- text-align: center;  
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 }
 
 .GoSignUp a {
     display: block;
-<<<<<<< HEAD
     text-align: center;
     color: rgb(218 51 3);
     font-size: 1vw;
-=======
-text-align: center;
-
-    color: rgb(218 51 3);
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 
 }
 
 .GoSignUp a:hover {
-<<<<<<< HEAD
     color: rgb(253, 0, 0);
     border-radius: 25px;
 
@@ -409,52 +278,10 @@ text-align: center;
     .login-modal {
         padding-top: 5px;
         height: 20rem;
-=======
-    color: rgb(9, 1, 1);
-    border-radius: 25px;
-    
-}
-@media (max-width:1090px) {
-    .login a{
-        font-size:0.5rem;
-    }
-    
-    .login .Login_btn{
-        font-size: 0.5rem;
-    }
-    .modal_wrap {
-        position: fixed;
-        width: 40vw;
-        height: 40vw;
-        border: 2px solid black;
-
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
     }
 
 }
 
-<<<<<<< HEAD
-=======
-
-@media (max-width:850px) {
- 
-    .modal_wrap {
-        display: flex;
-        position: fixed;
-        width: 70vw;
-        height: 85vw;
-        border: 2px solid black;
-
-    }
-
-}
-
-@media (min-width:768px) {
-    
-}
-
-
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 /*HeaderB 로고와 제목*/
 
 .HeaderB {
@@ -474,19 +301,11 @@ text-align: center;
     font-size: larger;
     font-weight: bolder;
     font-size: 3vw;
-<<<<<<< HEAD
     color: var(--dark-main-color);
     vertical-align: middle;
     text-align: center;
     text-shadow: 1px 1px 3px rgb(38, 61, 60);
     letter-spacing: 0.7vw;
-=======
-    color: var(--dark-main-color); 
-    vertical-align: middle;
-    text-align: center;
-    text-shadow:1px 1px 3px rgb(38, 61, 60);
-    letter-spacing:0.7vw;
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 
 
 }
@@ -508,11 +327,7 @@ text-align: center;
 
 .HeaderC ul {
     padding: 2vw;
-<<<<<<< HEAD
 
-=======
-    
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 }
 
 .HeaderC li {
@@ -525,10 +340,6 @@ text-align: center;
     transition: 0.2s linear;
     border-bottom: 1.5px solid rgb(68, 129, 208);
     color: var(--dark-main-color)
-<<<<<<< HEAD
-=======
-
->>>>>>> c873ed9e4f9b396daef50a9a2c3e851c1f0ffb68
 }
 
 /*subA 호버하면 소개메뉴나오게*/
