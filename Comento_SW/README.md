@@ -104,11 +104,28 @@
 
 
 ---
-## 2차 과제
+<details>
+   <summary>  2차 과제 </summary>
+     <div  markdown="2">
+     
+   </div>
+</details>
 ---
-## 3차 과제 
+<details>
+   <summary>  3차 과제 </summary>
+     <div  markdown="3">
+     
+   </div>
+</details>
 ---
-## 4차 과제 
+<details>
+   <summary>  4차 과제 </summary>
+     <div  markdown="4">
+     
+   </div>
+</details>
+---
+
 
 
 ```
