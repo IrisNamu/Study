@@ -93,9 +93,10 @@
 
 ### 6. 스프링, Mariadb, MyBatis 연동, 데이터 조회
 
-- pom.xml 코드 추가
-- root-context.xml
-[에러]
+![output](https://user-images.githubusercontent.com/106574819/201309898-38e0dd72-c64c-4e2a-91fe-4b1cc52b765a.png)
+
+
+
 
 </div>
 </details>
