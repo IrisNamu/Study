@@ -112,6 +112,9 @@
  <h1>기술가이드, API 문서 등 업무를 위해 소통하는 법 이해하기</h1>
 
 😊2차 과제물 API문서 다운 <br>
+[SW 활용 현황 API 명세서.pdf](https://github.com/IrisNamu/Study/files/10046334/SW.API.pdf)
+
+
 
      # API 문서 작성해보기
 
