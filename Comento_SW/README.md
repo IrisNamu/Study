@@ -233,7 +233,136 @@ API 이름
 <details>
    <summary>  3차 과제 </summary>
      <div  markdown="3">
-     ### 
+  
+File > New > Project > Spring Boot > Spring Starter Project 를 클릭하여 프로젝트 생성
+
+
+----------
+
+**pring Boot 포트 변경스프링부트 웹서버 포트 변경**
+
+-   스프링부트 Web의 기본포트는 [8080](https://zetawiki.com/w/index.php?title=8080&action=edit&redlink=1)임
+-   다른 포트를 사용하려면 [application.properties](https://zetawiki.com/wiki/Application.properties) 를 수정
+
+`server.port = 포트번호`
+
+
+# **2 적용방법**
+
+-   STS --- Package Explorer
+-   프로젝트명 [boot] --- src/main/resources --- application.properties 더블클릭
+
+
+
+→ 원하는 포트 번호 기입→ 특별히 기입한 것이 없다면 파일 내용은 비어 있음
+
+**3) application.properties 수정 ( src/main/resources )**
+
+```java
+server.port = 8031
+server.servlet.contextPath=/
+ 
+spring.mvc.view.prefix=/WEB-INF/views/
+spring.mvc.view.suffix=.jsp
+ 
+devtools.livereload.enabled=true
+ 
+spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+spring.datasource.url=jdbc:mariadb://127.0.0.1:3306/statistc
+spring.datasource.username=root
+spring.datasource.password=devfunpj
+
+```
+
+----------
+
+
+*~~- 오류 발생(해결) Several ports (8005, 8081) required by Tomcat v9.0 Server at localhost are already in use. The server may already be running in another process, or a system process may be using the port. To start this server you will need to stop the other process or change the port number(s).~~*
+
+# . Dynamic Web Module 옵션 체크 확인
+
+**검색을 해보면 대부분 이 방법을 소개하고 있습니다.**
+
+1.  프로젝트 선택 후 마우스 오른쪽 클릭
+2.  Properties 선택
+3.  Project Facets 선택
+4.  Dynamic Web Module 옵션과 java 옵션을 체크한 후 apply 버튼 클릭
+
+----------
+
+프로젝트 실행하고 확인해보기
+
+-   port는 application.properties에 등록되어 있습니다.
+-   즉 url은 **localhost:8031/test** 가 url이 됩니다.
+---
+
+
+---
+
+```java
+.   ____          _            __ _ _
+ /\\\\ / ___'_ __ _ _(_)_ __  __ _ \\ \\ \\ \\
+( ( )\\___ | '_ | '_| | '_ \\/ _` | \\ \\ \\ \\
+ \\\\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v2.2.2.RELEASE)
+
+2022-11-24 16:18:24.785  INFO 22776 --- [  restartedMain] c.e.demo.SettingWebBootApplication       : Starting SettingWebBootApplication on DESKTOP-I9PE8RB with PID 22776 (C:\\Users\\jin99\\Desktop\\Git_Study\\Study\\Comento_SW\\settingWeb_boot\\target\\classes started by jin in C:\\Users\\jin99\\Desktop\\Git_Study\\Study\\Comento_SW\\settingWeb_boot)
+2022-11-24 16:18:24.789  INFO 22776 --- [  restartedMain] c.e.demo.SettingWebBootApplication       : No active profile set, falling back to default profiles: default
+2022-11-24 16:18:24.857  INFO 22776 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-11-24 16:18:24.857  INFO 22776 --- [  restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-11-24 16:18:25.582  WARN 22776 --- [  restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.example.demo]' package. Please check your configuration.
+2022-11-24 16:18:26.158  INFO 22776 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8031 (http)
+2022-11-24 16:18:26.169  INFO 22776 --- [  restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-11-24 16:18:26.169  INFO 22776 --- [  restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.29]
+2022-11-24 16:18:26.420  INFO 22776 --- [  restartedMain] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2022-11-24 16:18:26.433  INFO 22776 --- [  restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-11-24 16:18:26.433  INFO 22776 --- [  restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1576 ms
+2022-11-24 16:18:26.628  INFO 22776 --- [  restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2022-11-24 16:18:26.973  INFO 22776 --- [  restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-11-24 16:18:27.059  INFO 22776 --- [  restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8031 (http) with context path ''
+2022-11-24 16:18:27.063  INFO 22776 --- [  restartedMain] c.e.demo.SettingWebBootApplication       : Started SettingWebBootApplication in 2.672 seconds (JVM running for 3.17)
+2022-11-24 16:18:41.505  INFO 22776 --- [nio-8031-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-11-24 16:18:41.505  INFO 22776 --- [nio-8031-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-11-24 16:18:41.513  INFO 22776 --- [nio-8031-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+
+```
+
+프로제트 서버를 실행 한 후
+
+localhost:8080 으로 접속을 해보면
+
+Whitelabel Error Page 에러가 발생하는 경우가 있는데
+
+전체 에러 메시지는 아래와 같다
+
+# Whitelabel Error Page (미해결)
+
+
+
+
+**시도 방법 1. localhost:8080 으로 연결 시 기본값인 index.html이 없다**
+
+![https://blog.kakaocdn.net/dn/dK8bRu/btrgYKVBswM/bdBUotWKa1Z1bOakA5xf6k/img.png](https://blog.kakaocdn.net/dn/dK8bRu/btrgYKVBswM/bdBUotWKa1Z1bOakA5xf6k/img.png)
+
+스프링 구동 시 처음에는 무조건
+
+index.html 을 찾게 설정이 되어있기 때문에
+
+index.html을 만들어두지 않으면 이런 에러가 난다
+
+-> 그러나 계속 나옴
+
+**시도 방법 2**
+Description Resource Path Location Type Java compiler level does not match the version of the installed Java project facet. settingWeb_boot Unknown Faceted Project Problem (Java Version Mismatch)
+
+-> properties > Project Facets > Java 를 자신이 사용하고있는 컴파일러 버전과 맞주어주어야 한다.
+
+그래도 되지 않음.
+
+---
+실패
    </div>
 </details>
 ---
